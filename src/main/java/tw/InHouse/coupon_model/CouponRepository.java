@@ -1,0 +1,27 @@
+package tw.InHouse.coupon_model;
+
+
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+
+
+public interface CouponRepository extends JpaRepository<Coupon, Integer> {
+
+	
+	
+
+//		  @Query(value = "from Coupon c where c.member_name = ?1")
+//		  public List<Coupon> findBymember(String member_name)
+//		  ;
+		
+//	@Query(value = "select * from #{#entityName} b where b.name=?1", nativeQuery = true)
+	
+	@Query(value = "Select * From coupon where member_id=?1", nativeQuery = true)//SQL語法
+	public List<Coupon> findBymember(int member_id);
+	
+	
+}

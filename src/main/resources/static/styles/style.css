@@ -1,0 +1,45 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}   
+
+body{
+    background: url(../image/background.png) ;
+    background-size: cover;
+}
+
+.t1 {
+    font-weight: bold;
+    color: rgb(114,103,83);
+    padding-top: 20px;
+}
+h1{
+    font-family: '黑體';
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(114,103,83);
+}
+img{
+    width: 90px;
+    height: 90px;
+    /* position: relative; */
+    top: 20px;
+    left:20px;
+}
+.logo{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: 20px;
+    left:20px;
+}
+
+img.error,img.right{
+    width:16px;
+    height:16px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
